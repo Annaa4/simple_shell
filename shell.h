@@ -18,7 +18,7 @@
 /**
  * struct builtin_d - Defines the builtins functions.
  * @built: The name of the build in command.
- * @f: A pointer to the right builtin function.
+ * @fun: A pointer to the right builtin function.
  */
 typedef struct builtin_d
 {
@@ -43,7 +43,7 @@ void single_free(int n, ...);
 
 int built_in(char **command, char *line);
 void (*check_built_ins(char *str))(char *str);
-void exit_s(char *str);
-void env_s(char *str);
+void exit_b(char *str);
+void env_b(char *str);
 
 #endif
